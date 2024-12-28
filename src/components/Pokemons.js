@@ -14,8 +14,8 @@ const Pokemons = ({pokemon}) => {
     },[pokemon])
     return (
         <div className="pokemons">
-            <img src={pokemonItems?.sprites?.other?.dream_world?.front_default}/>
-            {pokemonItems.name}
+            <img src={pokemonItems?.sprites?.other?.dream_world?.front_default} className='pokemons-img'/>
+            <p className='pokemons-title'>{pokemonItems.name}</p>
         </div>
     );
 };
